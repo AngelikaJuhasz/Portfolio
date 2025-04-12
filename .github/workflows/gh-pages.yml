@@ -21,11 +21,11 @@ jobs:
         run: |
           dotnet restore
           dotnet build --configuration Release
-          dotnet publish --configuration Release -o ./dist
+          dotnet publish --configuration Release
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # The branch to deploy to (make sure your GitHub Pages source is set to this branch)
-          folder: ./dist    # The folder where the built website is located
+          branch: gh-pages  # Ensure this is the correct branch
+          folder: ./bin/Release/net8.0/publish/wwwroot
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub's token for authentication
