@@ -28,4 +28,4 @@ jobs:
         with:
           branch: gh-pages  # The branch to deploy to (make sure your GitHub Pages source is set to this branch)
           folder: ./dist    # The folder where the built website is located
-          token: ${{ secrets.GITHUB_TOKEN }}  # GitHub's token for authentication
+          token: ${{ secrets.PERSONAL_TOKEN }}  # GitHub's token for authentication
