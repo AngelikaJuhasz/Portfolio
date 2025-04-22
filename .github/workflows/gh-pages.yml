@@ -23,6 +23,12 @@ jobs:
           dotnet build --configuration Release
           dotnet publish --configuration Release -o ./dist
 
+      - name: Disable Jekyll (important to avoid conflicts)
+        run: touch ./dist/.nojekyll
+
+      - name: List dist contents
+        run: ls -R ./dist  # To verify the correct files are in the dist folder
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
