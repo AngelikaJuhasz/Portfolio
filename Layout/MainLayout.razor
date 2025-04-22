@@ -1,21 +1,22 @@
 ﻿@using MudBlazor
+
 @inherits LayoutComponentBase
 
 
-<MudLayout>
 
-    <MudAppBar Color="Color.Primary" Elevation="4">
-        <MudText Typo="Typo.h6">My Portfolio</MudText>
-        <MudSpacer />
-        <MudLink Href="#introduction" Class="mx-2">Intro</MudLink>
-        <MudLink Href="#games" Class="mx-2">Games</MudLink>
-        <MudLink Href="#software" Class="mx-2">Software</MudLink>
-        <MudLink Href="#physical" Class="mx-2">Physical</MudLink>
-        <MudLink Href="#contact" Class="mx-2">Contact</MudLink>
-    </MudAppBar>
+    <MudLayout>
+        <!-- AppBar for larger screens -->
+        <MudAppBar Color="Color.Primary" Elevation="4">
+            <MudText Typo="Typo.h6">My Portfolio</MudText>
+            <MudSpacer />
+            <MudLink Href="#introduction" Class="mx-2">Intro</MudLink>
+            <MudLink Href="#games" Class="mx-2">Games</MudLink>
+            <MudLink Href="#software" Class="mx-2">Software</MudLink>
+            <MudLink Href="#physical" Class="mx-2">Physical</MudLink>
+            <MudLink Href="#contact" Class="mx-2">Contact</MudLink>
+        </MudAppBar>
 
-    <MudMainContent>
-        @Body
-    </MudMainContent>
-
-</MudLayout>
+        <MudMainContent>
+            @Body
+        </MudMainContent>
+    </MudLayout>
