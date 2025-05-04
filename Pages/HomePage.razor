@@ -1,12 +1,17 @@
 ﻿@page "/"
 @using MudBlazor
 
+
 <MudContainer MaxWidth="MaxWidth.Large" Class="my-6">
     <!-- Welcome Section -->
-    <MudPaper Class="pa-6 mb-6">
-        <MudText Typo="Typo.h3">Welcome to My Portfolio</MudText>
+    <div class="landing-section">
+        <div class="text-center">
+            <h1 style="color: white;">Welcome to My Portfolio</h1>
+            <p style="color: white;">Crafted with care, tech, and lots of caffeine ☕</p>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="#introduction">Get to Know Me</MudButton>
+        </div>
+    </div>
 
-    </MudPaper>
 
     <!-- Introduction -->
     <section id="introduction">
@@ -85,3 +90,4 @@
         </MudPaper>
     </section>
 </MudContainer>
+
